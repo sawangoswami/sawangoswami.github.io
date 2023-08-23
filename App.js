@@ -28,7 +28,7 @@ function App() {
 
 
     function handleSubmit(event){
-          event.stopPropagation();
+        event.stopPropagation();
         event.preventDefault();
         let input = document.getElementById('word').value;
         setQuery(input);
@@ -63,9 +63,9 @@ function App() {
                         <div> 
                         <div className='syn'>{meaning.synonyms[0] ? <div> <div  className="italic">synonyms</div><div>{meaning.synonyms[0]}</div></div> : ""}</div>
                         <div className='ant'>{meaning.antonyms[0]  ?  <div> <div  className="italic">antonyms</div><div>{meaning.antonyms[0]}</div></div> : ""}</div>
-                       <div className='meaning'>{ meaning.partOfSpeech }</div>
+                       <ul className='meaning'>{ meaning.partOfSpeech }</ul>
                          {meaning.definitions.map(def => (
-                           <div className = 'def' > {def.definition } </div>
+                           <li className = 'def' > {def.definition } </li>
                             ))} 
                          </div>
                          ))}
