@@ -1,0 +1,65 @@
+.results {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.search {
+    background-color: darkgray;
+    text-align: center;
+    padding: 15px;
+}
+
+.input {
+    font-size: 25px;
+
+    width:100%;
+
+}
+
+div{
+
+    line-height:1.8rem
+}
+
+.syn{
+
+    padding-top:10px
+}
+
+.meaning{
+  margin-top:15px;
+  border-top:2px solid black
+}
+.italic{
+
+    font-style:italic
+}
+
+.submit{
+        font-size: 21px;
+    padding: 5px 5px 2px;
+}
+
+form{
+    margin:0 15px;
+    display:flex;
+    gap:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
