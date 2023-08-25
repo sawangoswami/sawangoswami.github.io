@@ -72,13 +72,17 @@ function App() {
                       
                        </div>
 
-                      ))}
+                      ))
+                }
                   
+
+
                    {console.log(characters)}
+                  <div className='srcUrl' > 
+                  <a  href = {characters[0] ? (characters[0].sourceUrls[0]) : '' } onClick = {characters[0] ? (event)=> {event.stopPropagation(); alert('click')} : (event)=>{ event.preventDefault()} } > {characters[0] ? "Further Reading" : "input is wrong/ word does not exist/wikipedia deosn't contain this page" }</a>
                   </div>
-                 <div className='srcUrl' > 
-                  <a href = {characters[0] ? (characters[0].sourceUrls[0]) : '' } onClick = {characters[0] ? (event)=> {event.stopPropagation(); alert('click')} : (event)=>{ event.preventDefault()} } > {characters[0] ? "further Reading" : "input is wrong/ word does not exist/wikipedia deosn't contain this page" }</a>
                   </div>
+                 
                   
             </div>
             
