@@ -1,34 +1,55 @@
+*{
+
+    margin: 0;
+    padding:0;
+}
+h2{
+
+    font-size: 36px;
+    margin-bottom: 15px;
+    margin-top:30px
+}
+
+h1{
+
+    font-size:45px;
+    margin-bottom:25px
+}
 .results {
-    display: grid;
+    display:flex;
     gap: 15px;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 1200px;
-    margin-left: auto;
+/*    grid-template-columns: repeat(4, 1fr);*/
+/*    max-width: 1200px;*/
+    /*margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 50px;*/
+    padding: 60px 15px 60px 30px;
+    background-color:bisque;
 }
 
 .search {
-    background-color: darkgray;
-    text-align: center;
+    background-color: #f3d1a8;
+    
     padding: 15px;
 }
 
 .input {
     font-size: 25px;
-
-    width:100%;
+   width:100%;
+   text-align: center;
 
 }
 
 div{
 
-    line-height:1.8rem
+    line-height:2.1rem
 }
 
 .syn{
 
-    padding-top:10px
+    padding-top:10px;
+    font-size:21px
+   
 }
 
 .meaning{
@@ -37,7 +58,9 @@ div{
 }
 .italic{
 
-    font-style:italic
+    font-style:italic;
+    font-weight:bold;
+    font-size:26px
 }
 
 .submit{

@@ -44,7 +44,7 @@ function App() {
             <form  onSubmit =   { handleSubmit }>
                 <input type="text"
                        id = 'word'
-                       placeholder={"Search Character"}
+                       placeholder={"Search A Word"}
                        className={"input"}
 
                       />
@@ -57,13 +57,13 @@ function App() {
                       
                     {characters.map((character,index) => (
                        <div className="ajax"  >
-                       <div>{character.word}</div>
+                       <div><h1>{character.word}</h1></div>
                        <div>{character.phonetic}</div>
                        {character.meanings.map( meaning => ( 
                         <div> 
                         <div className='syn'>{meaning.synonyms[0] ? <div> <div  className="italic">synonyms</div><div>{meaning.synonyms[0]}</div></div> : ""}</div>
                         <div className='ant'>{meaning.antonyms[0]  ?  <div> <div  className="italic">antonyms</div><div>{meaning.antonyms[0]}</div></div> : ""}</div>
-                       <ul className='meaning'>{ meaning.partOfSpeech }</ul>
+                       <ul className='meaning'><h2>{ meaning.partOfSpeech }</h2></ul>
                          {meaning.definitions.map(def => (
                            <li className = 'def' > {def.definition } </li>
                             ))} 
